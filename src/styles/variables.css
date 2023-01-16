@@ -1,0 +1,54 @@
+:root {
+
+  /*base color*/
+  --base-color-gray-10:#F9F9FB;
+  --base-color-gray-20:#F6F7FB;
+  --base-color-gray-30:#F4F5F6;
+  --base-color-gray-40:#F0F1F2;
+  --base-color-gray-50:#E6EAED;
+  --base-color-gray-60:#D5DAE0;
+  --base-color-gray-70:#C5CBD1;
+  --base-color-gray-80:#B9BDC1;
+  --base-color-gray-90:#ABAEB2;
+  --base-color-gray-100:#9CA0A6;
+  --base-color-gray-200:#81868C;
+  --base-color-gray-300:#767B7F;
+  --base-color-gray-400:#6A6F73;
+  --base-color-gray-500:#575C60;
+  --base-color-gray-600:#464A4D;
+  --base-color-gray-700:#343739;
+  --base-color-gray-800:#202426;
+  --base-color-gray-900:#111314;
+
+  --base-color-blue-10:#F7FCFF;
+  --base-color-blue-20:#F2F8FF;
+  --base-color-blue-30:#EDF5FF;
+  --base-color-blue-40:#CDE6FA;
+  --base-color-blue-50:#BBDEFA;
+  --base-color-blue-60:#9BD0FA;
+  --base-color-blue-70:#73BEFF;
+  --base-color-blue-80:#66B8FF;
+  --base-color-blue-90:#52AFFF;
+  --base-color-blue-100:#3EA6FF;
+  --base-color-blue-200:#0095FF;
+  --base-color-blue-300:#0883FF;
+  --base-color-blue-400:#006AFF;
+  --base-color-blue-500:#0060E5;
+  --base-color-blue-600:#0058CC;
+  --base-color-blue-700:#004DB2;
+  --base-color-blue-800:#003780;
+  --base-color-blue-900:#202F43;
+
+  /*semantic color*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  --color-bg-primery:#006AFF;
+}
