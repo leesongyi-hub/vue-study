@@ -40,13 +40,22 @@
   --base-color-blue-900:#202F43;
 
   /*semantic color*/
-  --bg-color-primery:#006AFF;
+  --bg-color-primery: var(--base-color-blue-400);
 
-  --border-color-primery:#006AFF;
-  --border-color-step-10:#E6EAED;
-  --border-color-stepDefault:#D5DAE0;
-  --border-color-step--10:#C5CBD1;
-  --border-color-step--20:#B9BDC1;
+  --border-color-primery: var(--base-color-blue-400);
+  --border-color-step-10: var(--base-color-gray-50);
+  --border-color-stepDefault: var(--base-color-gray-60);;
+  --border-color-step--10:var(--base-color-gray-70);
+  --border-color-step--20:var(--base-color-gray-80);
 
-
+  --text-color-primary: var(--base-color-blue-400);  
+  --text-color-gray-100: var(--base-color-gray-900);
+  --text-color-gray-200: var(--base-color-gray-800);
+  --text-color-gray-300: var(--base-color-gray-700);
+  --text-color-gray-400: var(--base-color-gray-600);
+  --text-color-gray-500: var(--base-color-gray-500);
+  --text-color-gray-600: var(--base-color-gray-400);
+  --text-color-gray-700: var(--base-color-gray-300);
+  --text-color-gray-800: var(--base-color-gray-200);
+  --text-color-gray-900: var(--base-color-gray-100);
 }

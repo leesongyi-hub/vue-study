@@ -7,12 +7,16 @@ export default {
   component: MyButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    //backgroundColor: { control: 'color' },
     onClick: {},
     size: {
       control: { type: 'select' },
       options: ['small', 'medium', 'large', 'xlarge'],
     },
+    configuration: {
+      control: { type: 'select' },
+      options: ['primary', 'secondary', 'tertiary', 'ghost'],
+    },  
   },
 };
 
@@ -31,11 +35,28 @@ const Template = (args) => ({
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/vue/writing-stories/args
 Primary.args = {
-  primary: true,
+  configuration: 'primary',
   label: '버튼명',
+  Icon: false,
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+  configuration: 'secondary',
   label: '버튼명',
+  Icon: false,
+};
+
+export const Tertiary = Template.bind({});
+Tertiary.args = {
+  configuration: 'tertiary',
+  label: '버튼명',
+  Icon: false,
+};
+
+export const Ghost = Template.bind({});
+Ghost.args = {
+  configuration: 'ghost',
+  label: '버튼명',
+  Icon: false,
 };

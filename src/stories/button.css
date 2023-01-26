@@ -11,10 +11,21 @@
   background-color: var(--bg-color-primery);
 }
 .btn--secondary {
-  color: #333;
+  color: var(--text-color-gray-300);
   background-color: transparent;
   border:1px solid var(--border-color-stepDefault);
 }
+.btn--tertiary {
+  color: var(--text-color-primary);
+  background-color: transparent;
+  border:1px solid var(--border-color-primery);
+}
+.btn--ghost {
+  color: var(--text-color-gray-300);
+  background-color: transparent;
+  border:transparent;
+}
+
 .btn--small {
   font-size: 13px;
   height:26px;
@@ -23,18 +34,18 @@
 .btn--medium {
   font-size: 14px;
   font-weight:600;
-  height:36px;
+  height:32px;
   padding:0 16px;
 }
 .btn--large {
   font-size: 15px;
   font-weight:600;
-  height:40px;
+  height:36px;
   padding:0 16px;
 }
 .btn--xlarge {
   font-size: 16px;
   font-weight:600;
-  height:48px;
+  height:44px;
   padding:0 24px;
 }

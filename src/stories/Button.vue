@@ -12,13 +12,11 @@ export default {
   name: 'my-button',
 
   props: {
-    label: {
+    configuration: {
       type: String,
-      required: true,
-    },
-    primary: {
-      type: Boolean,
-      default: false,
+      validator: function (value) {
+        return ['ghost', 'primary', 'secondary', 'tertiary'].indexOf(value) !== -1;
+      },
     },
     size: {
       type: String,
@@ -26,9 +24,18 @@ export default {
         return ['small', 'medium', 'large', 'xlarge'].indexOf(value) !== -1;
       },
     },
-    backgroundColor: {
+    label: {
       type: String,
+      required: true,
     },
+    //backgroundColor: {
+    //  type: String,
+    //},
+    // Icon: {
+    //   type: String,
+    //   default: false,
+    // }
+    //disabled: Boolean
   },
 
   emits: ['click'],
@@ -38,13 +45,14 @@ export default {
     return {
       classes: computed(() => ({
         'btn': true,
-        'btn--primary': props.primary,
-        'btn--secondary': !props.primary,
-        [`btn--${props.size || 'medium'}`]: true,
+        //'btn--primary': props.primary,
+        //'btn--secondary': !props.primary,
+         [`btn--${props.configuration || 'primery'}`]: true,
+        [`btn--${props.size || 'large'}`]: true,       
       })),
-      style: computed(() => ({
-        backgroundColor: props.backgroundColor,
-      })),
+      //style: computed(() => ({
+      //  backgroundColor: props.backgroundColor,
+      //})),
       onClick() {
         emit('click');
       }
