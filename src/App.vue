@@ -1,19 +1,21 @@
 <template>
   <div class="container">
-<p>안녕하세요</p>
+    <my-button size="small" />안녕하세요
   </div>
 </template>
 
 <script>
 
-//import BaseTag from "./components/BaseTag.vue";
-export default {
-  components: {
 
-  },
+export default {
+  components: { 
+    MyButton 
+   }
+
+  
 };
 </script>
 
 <style module>
-.container p{color:var(--base-color-blue-500);}
+
 </style>

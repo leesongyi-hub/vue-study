@@ -40,15 +40,13 @@
   --base-color-blue-900:#202F43;
 
   /*semantic color*/
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  --color-bg-primery:#006AFF;
+  --bg-color-primery:#006AFF;
+
+  --border-color-primery:#006AFF;
+  --border-color-step-10:#E6EAED;
+  --border-color-stepDefault:#D5DAE0;
+  --border-color-step--10:#C5CBD1;
+  --border-color-step--20:#B9BDC1;
+
+
 }

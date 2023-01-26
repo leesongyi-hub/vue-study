@@ -39,15 +39,3 @@ export const Secondary = Template.bind({});
 Secondary.args = {
   label: '버튼명',
 };
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: '버튼명',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: '버튼명',
-};
