@@ -1,15 +1,34 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  <component :class="classes" @click="onClick" :style="style" :is="buttonType" :v-on="toggleClass">
+    <span class="label">{{label}}</span>
+    <slot></slot>
+  </component>
 </template>
 
 <script>
 import './button.css';
 import '.././styles/variables.css';
+import '.././styles/icon.css';
 import { reactive, computed } from 'vue';
 
-
 export default {
-  name: 'my-button',
+  name: 'base-button',
+
+  computed: {
+    buttonType() {
+      if (this.href) {
+        return "a";
+      } else {
+        return "button";
+      }
+    }
+  },
+
+  methods: {
+    toggleClass(){
+      alert('test')
+    }
+  },
 
   props: {
     configuration: {
@@ -26,37 +45,30 @@ export default {
     },
     label: {
       type: String,
-      required: true,
+      required: true,      
     },
-    //backgroundColor: {
-    //  type: String,
-    //},
-    // Icon: {
-    //   type: String,
-    //   default: false,
-    // }
-    //disabled: Boolean
+    href: {
+      required: false,
+      type: String,
+      default: null
+    },
+    
   },
+  //emits: ['click'],
 
-  emits: ['click'],
-
-  setup(props, { emit }) {
+  setup(props) {
     props = reactive(props);
     return {
       classes: computed(() => ({
-        'btn': true,
-        //'btn--primary': props.primary,
-        //'btn--secondary': !props.primary,
-         [`btn--${props.configuration || 'primery'}`]: true,
-        [`btn--${props.size || 'large'}`]: true,       
-      })),
-      //style: computed(() => ({
-      //  backgroundColor: props.backgroundColor,
-      //})),
-      onClick() {
-        emit('click');
-      }
+          'btn': true,
+          'btn--icoOnly': false,
+          [`btn--${props.configuration || 'primery'}`]: true,
+          [`btn--${props.size || 'large'}`]: true,
+        })
+      ),      
     }
   },
+
+
 };
 </script>

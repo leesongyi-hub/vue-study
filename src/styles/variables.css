@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 :root {
 
   /*base color*/
@@ -39,7 +41,7 @@
   --base-color-blue-800:#003780;
   --base-color-blue-900:#202F43;
 
-  /*semantic color*/
+  /* semantic color */
   --bg-color-primery: var(--base-color-blue-400);
 
   --border-color-primery: var(--base-color-blue-400);
@@ -48,6 +50,7 @@
   --border-color-step--10:var(--base-color-gray-70);
   --border-color-step--20:var(--base-color-gray-80);
 
+  /* font, icon */
   --text-color-primary: var(--base-color-blue-400);  
   --text-color-gray-100: var(--base-color-gray-900);
   --text-color-gray-200: var(--base-color-gray-800);
